@@ -3,7 +3,7 @@
 namespace app\core;
 
 
-class Controller
+abstract class Controller
 {
     public $route;
 

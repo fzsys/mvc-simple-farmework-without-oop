@@ -35,15 +35,15 @@ class Router
                     //debug($controller);
                     $controller->$action();
                 } else {
-                    echo $action . ' action was not found';
+                    View::errorCode(404);
                 }
 
             } else {
-                echo $path . ' controller was not found';
+                View::errorCode(404);
             }
 
         } else {
-            echo 'route was not found';
+            View::errorCode(404);
         }
     }
 

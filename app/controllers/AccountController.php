@@ -8,11 +8,11 @@ class AccountController extends Controller
 {
     public function registerAction()
     {
-        echo 'register page';
+        $this->view->render('Register page');
     }
 
     public function loginAction()
     {
-        echo 'login page';
+        $this->view->render('Login page');
     }
 }

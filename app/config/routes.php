@@ -1,6 +1,7 @@
 <?php
 
 return [
+
     '' => [
         'controller' => 'default',
         'action' => 'index',
@@ -19,11 +20,6 @@ return [
     'account/register' => [
         'controller' => 'account',
         'action' => 'register',
-    ],
-
-    'news/show' => [
-        'controller' => 'news',
-        'action' => 'show',
     ],
 
 ];

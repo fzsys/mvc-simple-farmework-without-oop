@@ -1,8 +1,8 @@
 <?php
-require 'app/lib/dev.php';
+require 'application/lib/dev.php';
 
 //namespaces
-use app\core\Router;
+use application\core\Router;
 
 //autoloader for classes
 spl_autoload_register(function ($class) {

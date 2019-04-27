@@ -1,13 +1,16 @@
 <?php
 
-namespace app\controllers;
+namespace application\controllers;
 
-use app\core\Controller;
+use application\core\Controller;
 
 class AccountController extends Controller
 {
     public function registerAction()
     {
+        if (!empty($_POST)) {
+            $this->view->location('/account/register');
+        }
         $this->view->render('Register page');
     }
 

@@ -3,12 +3,12 @@
 return [
 
     '' => [
-        'controller' => 'default',
+        'controller' => 'main',
         'action' => 'index',
     ],
 
     'contacts' => [
-        'controller' => 'default',
+        'controller' => 'main',
         'action' => 'contacts',
     ],
 

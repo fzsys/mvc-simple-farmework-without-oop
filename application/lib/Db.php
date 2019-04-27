@@ -1,6 +1,6 @@
 <?php
 
-namespace app\lib;
+namespace application\lib;
 
 use PDO;
 
@@ -10,7 +10,7 @@ class Db
     
     public function __construct()
     {
-        $config = require 'app/config/db.php';
+        $config = require 'application/config/db.php';
         $this->db = new PDO("mysql:host={$config['host']};dbname={$config['dbname']}", $config['user'], $config['pass']);
     }
 

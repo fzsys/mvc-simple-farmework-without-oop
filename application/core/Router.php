@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core;
+namespace application\core;
 
 
 class Router
@@ -10,7 +10,7 @@ class Router
 
     function __construct()
     {
-        $arr = require 'app/config/routes.php';
+        $arr = require 'application/config/routes.php';
         foreach ($arr as $key => $value) {
             $this->add($key, $value);
         }
@@ -25,7 +25,7 @@ class Router
     public function run()
     {
         if ($this->match()) {
-            $path = 'app\controllers\\' . ucfirst($this->params['controller']) . 'Controller';
+            $path = 'application\controllers\\' . ucfirst($this->params['controller']) . 'Controller';
 
             if (class_exists($path)) {
                 $action = $this->params['action'] . 'Action';

@@ -9,6 +9,7 @@ abstract class Controller
     public $model;
     public $access;
 
+    //подключаем пути из массива config/routes.php и наполняем массив $this->routes с помошью ф-ции add с превращением ключа в регулярку для дальнейшего сравнения с урлом
     public function __construct($route)
     {
         $this->route = $route;
